@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Profile</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            width: 400px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #2193b0;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: #2193b0;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #176781;
+        }
+        .secondary-btn {
+            background: #2193b0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Search Student Profile</h2>
+
+    <form action="SearchServlet" method="post">
+        <input type="text" name="studentId" placeholder="Enter Student ID" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <a href="profileForm.html">
+        <button type="button" class="secondary-btn">Back to Home</button>
+    </a>
+</div>
+
+</body>
+</html>
